@@ -1,0 +1,26 @@
+# === Core dependencies ===
+streamlit>=1.30.0
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+pandas>=2.0.0
+Pillow>=10.0.0
+matplotlib>=3.7.0
+
+# === PDF export (Arabic-aware) ===
+reportlab>=4.0.0
+arabic-reshaper>=3.0.0
+python-bidi>=0.4.2
+
+# === Face recognition (المحرك الأساسي — خفيف وسريع على CPU) ===
+# buffalo_s عبر onnxruntime — شغّل scripts/setup_face_models.py مرة واحدة
+onnxruntime>=1.16.0
+
+# === Face recognition (احتياطي قديم — اختياري، غير مطلوب) ===
+# المحرك القديم dlib لم يعد ضرورياً. أبقِه معلّقاً لتخفيف التثبيت.
+# dlib-bin>=19.24.0
+# face-recognition-models>=0.3.0
+# face-recognition>=1.3.0
+
+# === Optional: replace polars with CPU-compatible version on AVX-less CPUs ===
+# polars-lts-cpu>=0.20.0

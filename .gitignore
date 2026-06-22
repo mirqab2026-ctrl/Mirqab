@@ -1,0 +1,111 @@
+# ============================================================
+# Mirqab · .gitignore
+# ============================================================
+
+# -------- Python --------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# -------- Virtual Environments --------
+.venv/
+venv/
+env/
+ENV/
+
+# -------- IDE / Editor --------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+
+# -------- OS-specific --------
+.DS_Store
+Thumbs.db
+desktop.ini
+__MACOSX/
+*.lnk
+
+# -------- بيانات الدخول الفعلية (لا تُرفع لأسباب أمنية) --------
+credentials.local.bat
+.env
+
+# -------- Streamlit --------
+.streamlit/secrets.toml
+
+# -------- Database & Runtime Data --------
+# نُبقي gate.db يولّد تلقائياً عند أول تشغيل (انظر run.bat)
+# لو أردت رفع DB تجريبي للمستودع، احذف السطر التالي
+data/gate.db
+data/gate.db-journal
+data/gate.db-wal
+data/gate.db-shm
+data/*.broken*
+data/*.bak
+
+# نسخ احتياطية ينشئها مركز التحكم محلياً
+data/backups/
+
+# صور الوجوه الفعلية للأشخاص — لا تُرفع لأسباب خصوصية
+data/faces/*
+!data/faces/.gitkeep
+
+# قوائم تدريب OCR (صور تصحيح يدوية) — مولّدة محلياً
+data/training_queue_images/*
+!data/training_queue_images/.gitkeep
+
+data/seed_images/*
+!data/seed_images/.gitkeep
+
+# -------- Logs & temp --------
+*.log
+*.tmp
+*.temp
+logs/
+
+# -------- Jupyter --------
+.ipynb_checkpoints/
+
+# -------- Test/Coverage --------
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+
+# -------- Misc --------
+*.pid
+*.seed
+*.pid.lock
+
+# -------- PyInstaller build output --------
+build/
+dist/
+*.manifest
+
+# ============================================================
+# النماذج المدرّبة الكبيرة — لا تُرفع للمستودع (تُوزَّع عبر Google Drive / Release)
+# انظر قسم «تنزيل النماذج» في README.md
+# ============================================================
+models/*.pt
+models/face/*.onnx
+# نُبقي خريطة الأحرف (صغيرة وضرورية)
+!models/character_map.json
+
+# -------- مجلّد تسليم التدريب والداتاست (كبير الحجم) --------
+YOLO_Training_Delivery/
+
+# -------- أرشيفات مضغوطة (نماذج/داتاست) --------
+*.zip
+*.7z
+*.tar
+*.tar.gz

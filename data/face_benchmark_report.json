@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-06-06T22:04:00",
+  "engine": "InsightFace buffalo_s (SCRFD + MobileFaceNet 512-d, ONNX/CPU)",
+  "threshold": 0.58,
+  "gallery_encodings": 62,
+  "enrolled_people": 62,
+  "n_probes": 310,
+  "rank1_accuracy": 1.0,
+  "top1_accuracy": 1.0,
+  "false_reject_rate": 0.0,
+  "false_accept_rate": 0.0,
+  "impostor_accept_rate": 0.0,
+  "genuine_sim_mean": 0.9404,
+  "avg_latency_ms": 33.4,
+  "p95_latency_ms": 89.5
+}
