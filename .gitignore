@@ -109,3 +109,4 @@ models/face/*.onnx
 
 # -------- مجلّد تسليم التدريب: مضمّن في المستودع (مع أرشيفاته) --------
 !YOLO_Training_Delivery/**/*.zip
+merged_license_plate_dataset_full.zip
