@@ -105,5 +105,5 @@ Mirqab_System/
 
 ---
 <div align="center">
-Presidency of State Security · GID — AI Diploma with Tuwaiq Academy · Graduation Project 2026
+— AI Diploma with Tuwaiq Academy · Graduation Project 2026
 </div>
